@@ -16,15 +16,15 @@ namespace LCHFramework.Editor
 		
 		
 		
-		private static readonly List<Type> HideTypes = new List<Type>
+		private static readonly List<Type> HideTypes = new()
 		{
 			typeof(ParticleSystemRenderer),
 		};
 		private static Transform _offsetTransform;
 		private static int _offset;
-
-
-
+				
+		
+		
 		private static bool _hierarchyWindowItemOnGUIIsRegistered;
 		[InitializeOnLoadMethod]
 		public static void InitializeOnLoad()
